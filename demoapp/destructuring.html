@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demoapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+<script>
+
+      //Destructuring--------------------------------------------------------
+     
+      document.writeln("<h1>Array of Colors </h1>");
+
+      let cl=["red","blue","green"];
+
+      cl.forEach(val => {
+        
+        document.writeln(`<h2> ${val} </h2>`);
+
+      });
+
+       document.writeln("<h1>Array Values after destructuring </h1>");
+
+      let [c1,c2,c3]=cl;
+      document.writeln(`<h2> ${c1} </h2>`);
+      document.writeln(`<h2> ${c2} </h2>`);
+      document.writeln(`<h2> ${c3} </h2>`);
+
+        function dateinfo(dat)	
+        {
+        let m= dat.getMonth();
+        let y= dat.getFullYear();
+        let d= dat.getDate();
+        return (d,m,y);
+        }
+
+        const [date,month,year] = dateinfo(new Date());
+        document.write(date);
+
+    </script>
+  </body>
+</html>

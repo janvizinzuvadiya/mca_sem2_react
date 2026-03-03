@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demoapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+
+      const number = [1,2,3,4,5];
+      const doubled = number.map(function(no)
+      {
+        return no * 2;
+      });
+
+      console.log(number);
+      console.log(doubled);
+
+      const enums = number.filter(function(no)
+      {
+        return no%2 === 0;
+      });
+
+      console.log(enums);
+
+      const arr = number.map(val => val+2);
+      console.log(arr);
+
+      const sum = number.reduce(function (acc,curr)
+      {
+        return acc + curr ;
+      },0);
+
+      console.log(sum);
+
+
+    </script>
+
+  </body>
+</html>

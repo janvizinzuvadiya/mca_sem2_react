@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demoapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+<script>
+
+      // simple function--------------------------------------------------------
+     
+      console.log(" simple function: ");
+
+      function sum(a,b)
+      {
+        return a+b;
+      }
+      console.log(` ${sum(3,2)} `);// template litterals : ` ${var_name}
+
+
+      // function expression----------------------------------------------
+
+      console.log(" function expression: ");
+
+      const mul= function (a,b)
+      {
+        return a*b;
+      }
+      console.log(` ${mul(3,2)} `);
+      
+
+      // arrow function single statement----------------------------------------------
+
+      console.log(" arrow function single statement: ");
+      let sub = () => (4-2);
+
+      console.log(` ${sub()} `);
+
+      // arrow function multiple statement----------------------------------------------
+
+      console.log(" arrow function single statement: ");
+      let allopr = (a,b) => 
+      {
+        console.log(`Addition = ${(a+b)} `);
+        console.log(`Subtraction = ${(a-b)} `);
+        console.log(`Multiplication = ${(a*b)} `);
+        console.log(`Division = ${(a/b)} `);
+     
+      };
+      console.log(` ${allopr(10,5)} `);
+
+    </script>
+  </body>
+</html>

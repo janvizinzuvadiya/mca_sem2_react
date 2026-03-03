@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demoapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+
+      // Map
+      const fruits = new Map();
+
+      // set
+      fruits.set("apple",10);
+      fruits.set("banana",20);
+      fruits.set("cherry",30);
+      fruits.set("dragon-fruit",40);
+      fruits.set("elderberry",50);
+
+      // get
+      console.log(fruits.get('banana'));
+
+      // has
+      console.log(fruits.has('apple'));
+    
+      // delete
+      console.log(fruits.delete('cherry'));
+
+      // size
+      console.log(fruits.size);
+
+      // clear
+      console.log(fruits.clear());
+
+    </script>
+
+  </body>
+</html>

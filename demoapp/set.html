@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demoapp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+      <script type="module">
+
+      let sample = new Set();
+
+      // add method
+
+      sample.add("hello");
+      sample.add(1);
+      sample.add("@");
+      sample.add("34");
+
+      for(let item of sample)
+      {
+        console.log (item);
+      } 
+
+      // size method
+      console.log(sample.size);
+
+      // delete method
+      console.log(sample.delete(1));
+
+      // has method 
+      console.log(sample.has('@'));
+
+      // clear method
+      console.log(sample.clear());
+
+      
+      const num = [1,1,2,3,4,4,5];
+      const no = new Set(num);
+      
+      console.log(no);
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imp_exp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+
+      // inline import 
+      import {sum} from './src/operations.js';
+      let result = sum(2,2);
+      console.log("Addition= " + result);
+
+      // default export
+      import mul from './src/math.js';
+      let ans= mul(4,2);
+      console.log("Multiplication= " + ans);
+
+      // multi export
+      import {sub as s , pi} from './src/sub.js';
+      let subt= s(5,2);
+      console.log("Subtraction = ",subt);
+
+
+
+    </script>
+  </body>
+</html>
