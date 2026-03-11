@@ -5,6 +5,12 @@ h1
     padding: 100px;
     font-style: italic;
     font-weight: 700;
-
-
+}
+.heading1
+{
+    font-size:200px;
+    color:rgb(255, 0, 30);
+    padding: 100px;
+    font-style: italic;
+    font-weight: 700;
 }

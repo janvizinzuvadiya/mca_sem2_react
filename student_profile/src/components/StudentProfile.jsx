@@ -11,7 +11,6 @@ const StudentProfile = () => {
     skills: ["Java", "Python", "PHP", "Laravel", "React", "Ubuntu/Linux", "Git"],
     currentFocus: "Setting up development environments and mastering full-stack tools."
   };
-   
 
  return (
 

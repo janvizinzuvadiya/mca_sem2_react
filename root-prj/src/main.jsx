@@ -1,3 +1,71 @@
+// -----------------------------------------------------------------------
+// 05-Mar-2026 Thursday
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+// external css
+import './main.css';
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+// React Css Types
+
+// external css
+
+// function App() {
+//   return (
+//     <h1 className='heading1'>Hello World</h1>
+// );
+// }
+
+// export default App;
+
+// root.render( <App></App> );
+
+
+// internal css
+
+// function App2()
+// {
+//     const headingStyle = {
+//         fontSize: '200px',
+//         color: 'rgb(0, 255, 234)',
+//         padding: '100px',
+//         fontStyle: 'italic',
+//         fontWeight: 700
+//     };
+
+//     return (
+//         <h1 style={headingStyle}>Hello World</h1>
+//     );
+// }
+// export default App2;
+
+// root.render( <App2></App2> );
+
+// inline css
+
+// function App3()
+// {
+//     return (
+//         <h1 style={{fontSize: '200px', color: 'rgb(76, 0, 255)', padding: '100px', fontStyle: 'italic', fontWeight: 700}}>Hello World</h1>
+//     );
+// }
+// export default App3;
+
+// root.render( <App3></App3> );
+
+
+
+
+
+
+
+
+
+
+
 
 // -----------------------------------------------------------------------
 // 02-Mar-2026 Monday
