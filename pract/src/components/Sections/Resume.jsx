@@ -1,8 +1,10 @@
 import React from "react";
+import profileSquare2 from '../../assets/img/profile/profile-square-2.webp';
+
 
 function Resume() {
     return (
-        <div classNameName="resume">
+        <div className="resume">
            <section id="resume" className="resume section">
 
       {/* <!-- Section Title --> */}
@@ -19,7 +21,7 @@ function Resume() {
           <div className="col-lg-4">
             <div className="resume-side" data-aos="fade-right" data-aos-delay="100">
               <div className="profile-img mb-4">
-                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" className="img-fluid rounded" />
+                <img src={profileSquare2} alt="Profile" className="img-fluid rounded" />
               </div>
 
               <h3>Professional Summary</h3>

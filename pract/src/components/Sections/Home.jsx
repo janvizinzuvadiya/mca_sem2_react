@@ -1,8 +1,9 @@
 import React  from "react";
+import profileSquare2 from '../../assets/img/profile/profile-square-2.webp';
 
 const Home = () => {
     return (
-        <div classNameName="home">
+        <div className="home">
             
             <section id="hero" className="hero section">
 
@@ -41,7 +42,7 @@ const Home = () => {
                     <div className="hero-visual">
                         <div className="profile-container">
                         <div className="profile-background"></div>
-                        <img src="assets/img/profile/profile-2.webp" alt="Alexander Chen" className="profile-image" />
+                        <img src={profileSquare2} alt="Alexander Chen" className="profile-image" />
                         </div>
                     </div>
                     </div>

@@ -1,8 +1,9 @@
 import React from 'react';
+import aboutimg from '../../assets/img/profile/profile-square-3.webp';
 
 const About = () => {
     return (
-        <section id="about" className="about section">
+    <section id="about" className="about section">
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -11,7 +12,7 @@ const About = () => {
             <div className="profile-card">
               <div className="profile-header">
                 <div className="profile-image">
-                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" className="img-fluid" />
+                  <img src={aboutimg} alt="Profile Image" className="img-fluid" />
                 </div>
                 <div className="profile-badge">
                   <i className="bi bi-check-circle-fill"></i>
@@ -106,8 +107,59 @@ const About = () => {
         </div>
 
       </div>
+    <div id="stats" className="stats section light-background">
 
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div className="stats-wrapper">
+              <div className="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div className="icon-wrapper">
+                  <i className="bi bi-emoji-smile"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" className="purecounter"></span>
+                <p>Happy Clients</p>
+              </div>
+              {/* <!-- End Stats Item --> */}
+
+              <div className="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div className="icon-wrapper">
+                  <i className="bi bi-journal-richtext"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" className="purecounter"></span>
+                <p>Projects</p>
+              </div>
+              {/* <!-- End Stats Item --> */}
+
+              <div className="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div className="icon-wrapper">
+                  <i className="bi bi-headset"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" className="purecounter"></span>
+                <p>Hours Of Support</p>
+              </div>
+              {/* <!-- End Stats Item --> */}
+
+              <div className="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div className="icon-wrapper">
+                  <i className="bi bi-people"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" className="purecounter"></span>
+                <p>Hard Workers</p>
+              </div>
+              {/* <!-- End Stats Item --> */}
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
     </section>
+    
+      
+    // <!-- /Stats Section -->
     )
 }
 

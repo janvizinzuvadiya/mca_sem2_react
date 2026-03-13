@@ -4,49 +4,49 @@ function Services() {
     return (
         <div className="services">
             {/* <!-- Services Section --> */}
-    <section id="services" class="services section">
+    <section id="services" className="services section">
 
       {/* <!-- Section Title --> */}
-      <div class="container section-title" data-aos="fade-up">
+      <div className="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div>
       {/* <!-- End Section Title --> */}
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
+        <div className="service-header">
+          <div className="row align-items-center">
+            <div className="col-lg-8 col-md-12">
+              <div className="service-intro">
+                <h2 className="service-heading">
                   <div>Innovative business</div>
                   <div><span>performance solutions</span></div>
                 </h2>
               </div>    
             </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
+            <div className="col-lg-4 col-md-12">
+              <div className="service-summary">
                 <p>
                   We integrate forward-thinking strategies, creative approaches, and state-of-the-art technologies to deliver exceptional customer experiences that drive growth and engage target markets.
                 </p>
-                <a href="services.html" class="service-btn">
+                <a href="services.html" className="service-btn">
                   View All Services
-                  <i class="bi bi-arrow-right"></i>
+                  <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
+        <div className="row justify-content-center">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-palette"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
@@ -58,13 +58,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-gem"></i>
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-gem"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
@@ -76,13 +76,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-megaphone"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
@@ -94,13 +94,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-code-slash"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
@@ -112,13 +112,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-graph-up"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
@@ -130,13 +130,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-camera-video"></i>
+          <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div className="service-card position-relative z-1">
+              <div className="service-icon">
+                <i className="bi bi-camera-video"></i>
               </div>
-              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
+              <a href="service-details.html" className="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i className="bi bi-arrow-up-right"></i>
               </a>
               <h3>
                 <a href="service-details.html">
