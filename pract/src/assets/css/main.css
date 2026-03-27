@@ -194,6 +194,7 @@ h6 {
   .header~#footer {
     margin-left: 330px;
   }
+ 
 }
 
 @media (max-width: 1199px) {
@@ -371,6 +372,16 @@ h6 {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .footer .container {
+    margin-left: 0;         /* Align the container start with the main area edge */
+    max-width: 90%;         /* Allow it to use more of the right-side space */
+    padding-left: 23%;       /* This is your "slight right" nudge */
+  }
+
+  
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -545,6 +556,10 @@ section,
   overflow: hidden;
   display: flex;
   align-items: center;
+
+  justify-content: center; 
+  padding-left: 50px;
+
 }
 
 .hero .background-elements {
@@ -765,6 +780,20 @@ section,
   }
 }
 
+
+@media (min-width: 1200px) {
+  .hero .container {
+    margin-left: 0;       /* Aligns container to the left of the main area */
+    max-width: 90%;       /* Lets it spread out more to the right */
+    padding-left: 23%;     /* The "slight right" nudge */
+  }
+   /* 1. Shift the entire background container to the right */
+  .hero .background-elements {
+    left: 300px; /* Push the background container past the sidebar */
+    width: calc(100% - 300px); /* Ensure it doesn't cause horizontal scrolling */
+  }
+}
+
 @media (max-width: 992px) {
   .hero .hero-text {
     text-align: center;
@@ -839,7 +868,11 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .profile-card {
+.about .container {
+  padding-bottom: 60px;
+}
+.about .profile-card 
+{
   background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
   border-radius: 2rem;
   padding: 2.5rem;
@@ -850,7 +883,8 @@ section,
   overflow: hidden;
 }
 
-.about .profile-card::before {
+.about .profile-card::before 
+{
   content: "";
   position: absolute;
   top: 0;
@@ -858,6 +892,15 @@ section,
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+}
+/* --- Desktop Specific Alignment --- */
+@media (min-width: 1200px) {
+  .about .container {
+    margin-left: 0;         /* Align the container start with the main area edge */
+    max-width: 90%;         /* Allow it to use more of the right-side space */
+    padding-left: 23%;       /* This is your "slight right" nudge */
+  }
+ 
 }
 
 @media (max-width: 991px) {
@@ -1121,12 +1164,29 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+
 .stats .stats-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+ 
 }
 
+@media (min-width: 1200px) {
+  .stats  {
+    max-width: 95%;
+    margin-left: 23%;          
+  }
+  .stats .stats-item
+  {
+    padding: 50px 30px;
+    gap: 90px;
+  }
+
+  .stats .stats-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media (max-width: 992px) {
   .stats .stats-wrapper {
     grid-template-columns: repeat(2, 1fr);
@@ -1376,6 +1436,23 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+
+/* --- Resume Section Desktop Alignment --- */
+@media (min-width: 1200px) {
+  .resume .container {
+    margin-left: 0;         /* Align container start with the #main edge */
+    max-width: 92%;         /* Allow more width to prevent the columns from being too narrow */
+    padding-left: 23%;       /* The "slight right" nudge to match Home/About */
+  }
+
+  /* Extra breathing room between the Sidebar and the Resume Side Card */
+  .resume .resume-side {
+    margin-left: 10px; 
+  }
+}
+
+
+
 .resume .resume-side {
   background-color: var(--surface-color);
   padding: 2rem;
@@ -1515,6 +1592,33 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+/* --- Portfolio Section Desktop Alignment --- */
+@media (min-width: 1200px) {
+  .portfolio .container {
+    margin-left: 0;         /* Align container with the start of the #main area */
+    max-width: 95%;         /* Use more width to allow the masonry grid to look better */
+    padding-left: 23%;       /* The standard "slight right" nudge */
+  }
+
+  /* Add a little extra space between the nav-sidebar and the portfolio filter-sidebar */
+  .portfolio .filter-sidebar {
+    padding-right: 20px;
+  }
+}
+
+/* --- Portfolio Hover Effects & Styling --- */
+.portfolio .portfolio-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ensure the GLightbox icons and arrows are centered */
+.portfolio .portfolio-info {
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 991px) {
   .portfolio .filter-sidebar {
     margin-bottom: 30px;
@@ -1680,6 +1784,21 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+/* --- Services Section Desktop Alignment --- */
+@media (min-width: 1200px) {
+  .services .container {
+    margin-left: 0;         /* Align container start with the #main edge */
+    max-width: 95%;     /* Give it room for the 3-column grid */
+    padding-left: 23%;       /* The standard "slight right" nudge */
+  }
+
+  /* Specifically nudge the intro heading for a cleaner look */
+  .services .service-header .service-intro {
+    padding-left: 10px;
+  }
+ 
+}
+
 .services .service-header {
   margin-bottom: 60px;
 }
@@ -1877,7 +1996,7 @@ section,
   .services .service-card {
     padding: 150px 25px 25px;
   }
-
+  
   .services .service-card h3 {
     font-size: 24px;
   }
@@ -1898,21 +2017,35 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonial-masonry {
+
+/* --- Testimonials Section Desktop Alignment --- */
+@media (min-width: 1200px) {
+
+  .testimonials .container 
+  {         
+    max-width: 95%;        
+    padding-left: 23%; 
+    /* margin-left: 33%;  */
+  } 
+  
+  
+}
+
+.testimonials .testimonial-masonry {      
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   position: relative;
+ 
 }
-
-.testimonials .testimonial-masonry::before {
+.testimonials .testimonial-masonry::before {      
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at center, color-mix(in srgb, var(--accent-color), transparent 95%), transparent);
   opacity: 0.5;
-  z-index: -1;
+  z-index: -1;  
 }
 
 .testimonials .testimonial-item:nth-child(3n-1) {
@@ -1998,7 +2131,7 @@ section,
   object-fit: cover;
 }
 
-.testimonials .client-details h3 {
+.testimonials .client-details h3 {    
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
 }
@@ -2007,6 +2140,7 @@ section,
   font-size: 0.875rem;
   color: color-mix(in srgb, var(--heading-color), transparent 40%);
 }
+
 
 @media (max-width: 1199.98px) {
   .testimonials .testimonial-masonry {
@@ -2075,6 +2209,21 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+/* --- Contact Section Desktop Alignment --- */
+@media (min-width: 1200px) {
+  .contact .container {
+    margin-left: 0;         /* Align container with the start of the #main area */
+    max-width: 92%;         /* Keeps the form from getting too wide/stretched */
+    padding-left: 23%;       /* The standard "slight right" nudge */
+  }
+
+  /* Extra space for the contact info cards on the left */
+  .contact .info-item {
+    margin-left: 10px;
+  }
+}
+
 .contact .info-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);

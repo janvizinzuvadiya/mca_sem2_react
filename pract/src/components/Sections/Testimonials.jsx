@@ -11,16 +11,14 @@ const Testimonials = () => {
         <div className="testimonials">
              {/* <!-- Testimonials Section --> */}
     <section id="testimonials" className="testimonials section light-background">
-
+    
       {/* <!-- Section Title --> */}
       <div className="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div>
       {/* <!-- End Section Title --> */}
-
       <div className="container">
-
         <div className="testimonial-masonry">
 
           <div className="testimonial-item" data-aos="fade-up">
@@ -132,8 +130,9 @@ const Testimonials = () => {
           </div>
 
         </div>
+        </div>
 
-      </div>
+
 
     </section>
     {/* <!-- /Testimonials Section --> */}

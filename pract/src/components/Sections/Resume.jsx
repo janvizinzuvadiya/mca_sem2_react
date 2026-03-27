@@ -4,48 +4,48 @@ import profileSquare2 from '../../assets/img/profile/profile-square-2.webp';
 
 function Resume() {
     return (
-        <div className="resume">
-           <section id="resume" className="resume section">
+          <div className="resume">
+            <section id="resume" className="resume section">
 
-      {/* <!-- Section Title --> */}
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div>
-      {/* <!-- End Section Title --> --> */}
+        {/* <!-- Section Title --> */}
+        <div className="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        {/* <!-- End Section Title --> --> */}
 
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
+        <div className="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div className="row gy-4">
-          {/* <!-- Left column with summary and contact --> */}
-          <div className="col-lg-4">
-            <div className="resume-side" data-aos="fade-right" data-aos-delay="100">
-              <div className="profile-img mb-4">
-                <img src={profileSquare2} alt="Profile" className="img-fluid rounded" />
-              </div>
-
-              <h3>Professional Summary</h3>
-              <p>Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies to solve complex business challenges.</p>
-
-              <h3 className="mt-4">Contact Information</h3>
-              <ul className="contact-info list-unstyled">
-                <li><i className="bi bi-geo-alt"></i> 742 Evergreen Terrace, Springfield, MA 02101</li>
-                <li><i className="bi bi-envelope"></i> contact@example.com</li>
-                <li><i className="bi bi-phone"></i> +1 (555) 123-4567</li>
-                <li><i className="bi bi-linkedin"></i> linkedin.com/in/example</li>
-              </ul>
-
-              <div className="skills-animation mt-4">
-                <h3>Technical Skills</h3>
-                <div className="skill-item">
-                  <div className="d-flex justify-content-between">
-                    <span>Web Development</span>
-                    <span>95%</span>
-                  </div>
-                  <div className="progress">
-                    <div className="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+          <div className="row gy-4">
+            {/* <!-- Left column with summary and contact --> */}
+            <div className="col-lg-4">
+              <div className="resume-side" data-aos="fade-right" data-aos-delay="100">
+                <div className="profile-img mb-4">
+                  <img src={profileSquare2} alt="Profile" className="img-fluid rounded" />
                 </div>
+
+                <h3>Professional Summary</h3>
+                <p>Driven software architect with expertise in developing scalable, high-performance enterprise solutions. Passionate about leveraging cutting-edge technologies to solve complex business challenges.</p>
+
+                <h3 className="mt-4">Contact Information</h3>
+                <ul className="contact-info list-unstyled">
+                  <li><i className="bi bi-geo-alt"></i> 742 Evergreen Terrace, Springfield, MA 02101</li>
+                  <li><i className="bi bi-envelope"></i> contact@example.com</li>
+                  <li><i className="bi bi-phone"></i> +1 (555) 123-4567</li>
+                  <li><i className="bi bi-linkedin"></i> linkedin.com/in/example</li>
+                </ul>
+
+                <div className="skills-animation mt-4">
+                  <h3>Technical Skills</h3>
+                  <div className="skill-item">
+                    <div className="d-flex justify-content-between">
+                      <span>Web Development</span>
+                      <span>95%</span>
+                    </div>
+                    <div className="progress">
+                      <div className="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
 
                 <div className="skill-item">
                   <div className="d-flex justify-content-between">

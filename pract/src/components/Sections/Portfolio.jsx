@@ -1,8 +1,17 @@
 import React from "react";
+import portfolio_portrait1 from '../../assets/img/portfolio/portfolio-portrait-1.webp';
+import portfolio_portrait2 from '../../assets/img/portfolio/portfolio-portrait-2.webp';
+import portfolio_portrait4 from '../../assets/img/portfolio/portfolio-portrait-4.webp';
+import portfolio1 from '../../assets/img/portfolio/portfolio-1.webp';
+import portfolio2 from '../../assets/img/portfolio/portfolio-2.webp';
+import portfolio5 from '../../assets/img/portfolio/portfolio-5.webp';
+import portfolio6 from '../../assets/img/portfolio/portfolio-6.webp';
+import portfolio7 from '../../assets/img/portfolio/portfolio-7.webp';
+import portfolio10 from '../../assets/img/portfolio/portfolio-10.webp';
 
 const Portfolio = () => {
     return (
-        <div className="portfolio">
+    <div className="portfolio">
             {/* <!-- Portfolio Section --> */}
     <section id="portfolio" className="portfolio section">
 
@@ -35,13 +44,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-1.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio_portrait1} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Photography</span>
                         <h4>Capturing Moments</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-1.webp" className="glightbox" title="Capturing Moments"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio_portrait1} className="glightbox" title="Capturing Moments"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -52,13 +61,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio2} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Web Design</span>
                         <h4>Woodcraft Design</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-2.webp" className="glightbox" title="Woodcraft Design"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio2} className="glightbox" title="Woodcraft Design"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -69,13 +78,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-2.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio_portrait2} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Automotive</span>
                         <h4>classNameic Beauty</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-2.webp" className="glightbox" title="classNameic Beauty"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio_portrait2} className="glightbox" title="classNameic Beauty"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -86,13 +95,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-portrait-4.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio_portrait4} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Nature</span>
                         <h4>Natural Growth</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-portrait-4.webp" className="glightbox" title="Natural Growth"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio_portrait4} className="glightbox" title="Natural Growth"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -103,13 +112,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio5} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Photography</span>
                         <h4>Urban Stories</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-5.webp" className="glightbox" title="Urban Stories"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio5} className="glightbox" title="Urban Stories"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>
@@ -120,13 +129,13 @@ const Portfolio = () => {
 
                 <div className="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.webp" className="img-fluid" alt="Portfolio Image" loading="lazy" />
+                    <img src={portfolio6} className="img-fluid" alt="Portfolio Image" loading="lazy" />
                     <div className="portfolio-info">
                       <div className="content">
                         <span className="category">Web Design</span>
                         <h4>Digital Experience</h4>
                         <div className="portfolio-links">
-                          <a href="assets/img/portfolio/portfolio-6.webp" className="glightbox" title="Digital Experience"><i className="bi bi-plus-lg"></i></a>
+                          <a href={portfolio6} className="glightbox" title="Digital Experience"><i className="bi bi-plus-lg"></i></a>
                           <a href="portfolio-details.html" title="More Details"><i className="bi bi-arrow-right"></i></a>
                         </div>
                       </div>

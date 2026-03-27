@@ -103,12 +103,12 @@ const Sidebar = () => {
                 <li><a href="#contact" onClick={() => setIsOpen(false)}><i className="bi bi-envelope navicon"></i> Contact</a></li>
                 </ul>
             </nav>
-            <div class="social-links text-center">
-                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <div className="social-links text-center">
+                <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
+                <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
+                <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
+                <a href="#" className="google-plus"><i className="bi bi-skype"></i></a>
+                <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
             </div>
         </div>
         </header>
