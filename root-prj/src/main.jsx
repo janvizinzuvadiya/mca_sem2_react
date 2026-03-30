@@ -1,13 +1,165 @@
 // -----------------------------------------------------------------------
+// 30-Mar-2026 Monday
+
+import react from 'react';
+import ReactDOM from 'react-dom/client';
+import './main.css';
+import { useEffect ,useState} from 'react';
+
+function App()
+{
+    const [counter, setCounter] = useState(0);
+    const [secondCounter, setSecondCounter] = useState(0);
+
+    useEffect(()=>
+    {
+        const id = setInterval(()=>
+        {
+            setSecondCounter(secondCounter + 1);
+        },1000);
+        console.log("useEffect called");
+
+        return ()=>
+        {
+            clearInterval(id);
+            console.log("unmounting phase called");
+        }
+    },[]);
+
+    const incrementCounter = () => {
+        setCounter(counter + 1);
+    }
+
+
+    return (<div>
+        <h1>Counter: {counter}</h1>
+        <button onClick={()=> setCounter(counter + 1)}>Increment Counter</button>
+        <h1>Second Counter: {secondCounter}</h1>
+    </div>)
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <App></App>
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function App()
+// {
+//     const [counter, setCounter] = useState(0);
+    
+//     const incrementCounter = () => {
+//         setCounter(counter + 1);
+//     }
+
+//     return (<div>
+//         <h1>Counter: {counter}</h1>
+//         <br></br>
+//         <button onClick={incrementCounter}>Increment</button>
+//     </div>)
+// }
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//     <App></App>
+// );
+
+
+// -----------------------------------------------------------------------
 // 05-Mar-2026 Thursday
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// external css
-import './main.css';
+// import React from 'react';
+// import ReactDOM, { createRoot } from 'react-dom/client';
+// // external css
+// import './main.css';
 
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
+// React Life Cycle of component
+// Mouting Phase
+    // constructor
+    // static getDerivedStateFromProps()
+    // render()
+    // componentDidMount()
+// Updating Phase   
+    // static getDerivedStateFromProps()
+    // shouldComponentUpdate()
+    // render()
+    // getSnapshotBeforeUpdate()
+    // componentDidUpdate()
+// Unmounting Phase
+    // componentWillUnmount()
+
+
+//     class Header extends React.Component
+//     {
+//         constructor(props)
+//         {
+//             super(props);
+//             this.state = {name: "Header Component"};
+//             console.log("constructor called");
+//         }
+
+//         static getDerivedStateFromProps(props, state)
+//         {
+//             console.log("getDerivedStateFromProps called");
+//             return null;
+//         }
+
+//         componentDidMount()
+//         {
+//             console.log("componentDidMount called");
+//             setTimeout
+//             (()=>   
+//                 {
+//                     this.setState({name: "Header Component Updated"});
+//                 }, 1000 
+//             );
+//         }
+
+//         render()
+//         {
+//             console.log("render called");
+//             return (
+                
+//                 "this is header component render method"+
+//                 <h1>{this.state.name}</h1>
+//             );
+
+//         }
+//         shouldComponentUpdate()
+//         {
+//             console.log("shouldComponentUpdate called");
+//             return true;
+//         }
+
+//         getSnapshotBeforeUpdate(prevProps, prevState)
+//         {
+//             console.log("getSnapshotBeforeUpdate called");
+//             return null;
+//         }
+
+//         componentDidUpdate()
+//         {
+//             console.log("componentDidUpdate called");
+//         }
+//     }
+
+//     createRoot(document.getElementById('root')).render(
+//     <Header></Header>
+// );
+
+
+// const container = document.getElementById('root');
+// const root = ReactDOM.createRoot(container);
 
 // React Css Types
 
@@ -55,16 +207,6 @@ const root = ReactDOM.createRoot(container);
 // export default App3;
 
 // root.render( <App3></App3> );
-
-
-
-
-
-
-
-
-
-
 
 
 // -----------------------------------------------------------------------
