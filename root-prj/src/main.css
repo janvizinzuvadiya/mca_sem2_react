@@ -10,7 +10,7 @@ h1
 {
     font-size:200px;
     color:rgb(255, 0, 30);
-    padding: 100px;
+    padding: 60px;
     font-style: italic;
     font-weight: 700;
 }
@@ -22,9 +22,37 @@ button
     padding: 20px;
     border-radius: 10px;
     align-items: center;
-    margin-left: 130px;
+    margin-left: 390px;
 }
 div{
-    margin:330px;
+    margin:220px;
     align-items: center;
+}
+input{
+    font-size: 30px;
+    color: white;
+    background-color: rgb(109, 106, 106);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 130px;
+    opacity: 0.5;
+}
+label{
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+input[type="radio"]{
+    font-size: 30px;
+    color: white;
+    background-color: rgb(109, 106, 106);
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: 100px;
+    opacity: 0.5;
 }

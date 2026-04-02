@@ -1,45 +1,81 @@
-// -----------------------------------------------------------------------
-// 30-Mar-2026 Monday
+// ------------------------------------------------------------------------------------------------
+// 01-Apr-2026 Thursday
 
 import react from 'react';
 import ReactDOM from 'react-dom/client';
 import './main.css';
 import { useEffect ,useState} from 'react';
 
-function App()
+function Forexample()
 {
-    const [counter, setCounter] = useState(0);
-    const [secondCounter, setSecondCounter] = useState(0);
+    const [name, setName]  = useState('');
+    const [gender, setGender]  = useState('');
 
-    useEffect(()=>
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+    };
+
+    const handleGenderChange = (event) => {
+        setGender(event.target.value);
+    };
+
+    const [skills, setSkills] = useState([]);
+
+    const handleSkillsChange = (event) => {
+        const { value, checked } = event.target;
+        setSkills(prevSkills => {
+            if (checked) {
+                return [...prevSkills, value];
+            }
+            else {
+                return prevSkills.filter(skill => skill !== value);
+            }
+        });
+    };
+
+    const handlerSubmit = (event) => 
     {
-        const id = setInterval(()=>
-        {
-            setSecondCounter(secondCounter + 1);
-        },1000);
-        console.log("useEffect called");
-
-        return ()=>
-        {
-            clearInterval(id);
-            console.log("unmounting phase called");
-        }
-    },[]);
-
-    const incrementCounter = () => {
-        setCounter(counter + 1);
+        event.preventDefault();
+        alert(`Name: ${name} \n Gender: ${gender} \n Skills: ${skills.join(', ')}`);
     }
 
+    return (
+        <form onSubmit={handlerSubmit}>
+            <label>Name:</label>
+            <input type="text" value={name} onChange={handleNameChange}></input>
+          
+            <br></br>
+            <br></br>
 
-    return (<div>
-        <h1>Counter: {counter}</h1>
-        <button onClick={()=> setCounter(counter + 1)}>Increment Counter</button>
-        <h1>Second Counter: {secondCounter}</h1>
-    </div>)
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" checked={gender === 'male'} onChange={handleGenderChange}></input>
+            <label>Male</label>
+            <input type="radio" name="gender" value="female" checked={gender === 'female'} onChange={handleGenderChange}></input>
+            <label>Female</label>
+            <input type="radio" name="gender" value="other" checked={gender === 'other'} onChange={handleGenderChange}></input>
+            <label>Other</label>
+            <br></br>
+
+            <label>Skills:</label>
+            <input type="checkbox" name="skills" value="react" checked={skills.includes('react')} onChange={handleSkillsChange}></input>
+            <label>React</label>
+            <input type="checkbox" name="skills" value="angular" checked={skills.includes('angular')} onChange={handleSkillsChange}></input>
+            <label>Angular</label>
+            <input type="checkbox" name="skills" value="vue" checked={skills.includes('vue')} onChange={handleSkillsChange}></input>
+            <label>Vue</label>
+            <br></br>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <button type="submit">Submit</button>
+
+        </form>
+    );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App></App>
+    <Forexample></Forexample>
 );
 
 
@@ -53,6 +89,72 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------------------
+// 30-Mar-2026 Monday
+
+// import react from 'react';
+// import ReactDOM from 'react-dom/client';
+// import './main.css';
+// import { useEffect ,useState} from 'react';
+
+// function App()
+// {
+//     const [counter, setCounter] = useState(0);
+//     const [secondCounter, setSecondCounter] = useState(0);
+
+//     useEffect(()=>
+//     {
+//         const id = setInterval(()=>
+//         {
+//             setSecondCounter(secondCounter + 1);
+//         },1000);
+//         console.log("useEffect called");
+
+//         return ()=>
+//         {
+//             clearInterval(id);
+//             console.log("unmounting phase called");
+//         }
+//     },[]);
+
+//     const incrementCounter = () => {
+//         setCounter(counter + 1);
+//     }
+
+
+//     return (<div>
+//         <h1>Counter: {counter}</h1>
+//         <button onClick={()=> setCounter(counter + 1)}>Increment Counter</button>
+//         <h1>Second Counter: {secondCounter}</h1>
+//     </div>)
+// }
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//     <App></App>
+// );
 
 
 // function App()
