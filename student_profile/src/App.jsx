@@ -1,16 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {Routes,Route} from 'react-router-dom';
+
 import './App.css'
 
-import StudentProfile from './components/StudentProfile';
+import Header from './Header';
+import Footer from './Footer';
+import Sidebar from './Sidebar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
-    <StudentProfile />
+    <Header />
+      <Sidebar />
+    <Footer />
     </>
   )
 }

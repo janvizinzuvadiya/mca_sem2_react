@@ -1,42 +1,145 @@
+hr
+{
+  border: none;
+  border-top: 1px solid rgb(35, 27, 27);
+
+  margin: 1rem 0;
+}
+
+.StudentList
+{
+  margin-bottom: 1rem;
+  color: rgb(252, 249, 249);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+
+  width: 60rem;
+  height:600px;
+  cursor: pointer;
+  border: 1px solid rgb(252, 249, 249);
+}
+
+.RadioBox
+{
+  margin-bottom: 1rem;
+  color: rgb(252, 249, 249);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+
+  width: 60rem;
+  height:600px;
+  cursor: pointer;
+  border: 1px solid rgb(252, 249, 249);
+}
+
+.CheckBox 
+{
+  margin-bottom: 1rem;
+  color: rgb(252, 249, 249);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+
+  width: 60rem;
+  height:600px;
+  cursor: pointer;
+
+  border: 1px solid rgb(252, 249, 249);
+
+}
+
+/* input[type="submit"] {
+  background-color: transparent;
+  color: rgb(252, 249, 249);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid rgb(252, 249, 249);
+} */
+
+.Container
+{
+  height: 800px;
+  display: flex;
+
+}
+.Sidebar
+{
+  background: transparent;
+  align-items: center;
+  color: rgb(244, 234, 234);
+
+  width: 20%;
+  padding: 2rem;
+  height: 700px;
+
+  border: 1px solid rgb(244, 234, 234);
+  border-radius: 8px;
+
+
+}
+.sidebar h2 {
+  margin-top: 0;
+}
+.Container .Content
+{
+  background: transparent;
+  align-items: center;
+  color: rgb(244, 234, 234);
+
+  width: 80%;
+  padding: 0 5rem;
+ 
+}
+
+.Footer
+{
+  background: transparent;
+  
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  color: rgb(244, 234, 234);
+
+}
+
+.Header {
+  background: transparent;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(244, 234, 234);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color:aliceblue;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 2rem;
   text-align: center;
+  background-color: #1a1b1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
