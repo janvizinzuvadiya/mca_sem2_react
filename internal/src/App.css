@@ -1,0 +1,156 @@
+.Header
+{
+  height: 100px;
+  width : 100%;
+  background-color:lightblue;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color:rgb(16, 87, 132);
+}
+.Footer
+{
+  height: 100px;
+  width : 100%;
+  background-color:lightblue;
+  text-align: center;
+  padding-top: 20px;
+  position: fixed;
+  color:rgb(16, 87, 132);
+
+}
+.container
+{
+  display : flex;
+
+}
+.container .main h1
+{
+  color:rgb(202, 229, 227);
+  background-color: rgb(68, 88, 105);
+  padding:5px;
+  border-radius: 10px;
+  width: 250px;
+  align-items: center;
+  text-align: center;
+
+}
+.sidebar
+{
+  width : 18%;
+  background-color:rgb(42, 78, 101);
+  height: 730px;
+  padding-left: 30px;
+  padding-top: 30px;
+  color:white;
+
+}
+.main
+{
+  width : 80%;
+  background-color:rgb(231, 249, 250);
+  height: 730px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.main .inner-content
+{
+  padding:50px;
+  background-color: transparent;
+  height: 300px;
+  border: 1px solid rgb(16, 87, 132);
+  border-radius: 10px;
+  width: 91%;
+  height: 600px;
+
+}
+.main .inner-content p
+{
+  padding:20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+  margin: 30px;
+  font-size: 20px;
+}
+h1
+{
+  font-size:40px;
+}
+h2
+{
+  margin: 20px;
+  font-size: 25px;
+  color:rgb(52, 57, 58);
+}
+input
+{
+  margin-top:20px ;
+  margin-left:30px;
+  margin-right: 10px;
+}
+*
+{
+  margin :0;
+  padding :0;
+}
+
+
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  a {
+    text-decoration: none;
+    color:lightblue;
+    font-size: 30px;
+
+  }
+  a:hover
+  {
+    text-decoration: none;
+    color:rgb(81, 153, 226)
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
