@@ -17,8 +17,8 @@ const [showScrollTop, setShowScrollTop] = useState(false);
   useEffect(() => {
     // --- 1. PRELOADER ---
     const preloader = document.querySelector('#preloader');
-    if (preloader) preloader.remove();
-
+    if (preloader) preloader.remove();  
+    
     // --- 2. TYPED.JS ---
     const selectTyped = document.querySelector('.typed');
     if (selectTyped && window.Typed) {

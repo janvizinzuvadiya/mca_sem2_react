@@ -22,7 +22,7 @@ function StudentList()
             <br></br>
             <br></br>
 
-            {id && <h1>ID: {id}</h1>}
+            <p>Selected Student ID: {id}</p>
 
         </div>
     );
